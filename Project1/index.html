@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misellia Ikwan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="Ikwan.jpg">
+    
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h3>Misellia Ikwan</h3>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="#contact">Contacts</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="text-container">
+                <span class="role">CONTENT CREATOR</span>
+                <h1>Hello, my name is <br>Misellia Ikwan</h1>
+                <p>ou can call me Misellia! 🎵 I am a singer who loves music and art. Singing is a part of my life’s journey, and I want to keep inspiring people through the songs I perform! 💚✨"</p>
+                <div class="buttons">
+                    <a href="projects.html" class="btn projects">Projects</a>
+                    <a href="url_linkedin" class="btn linkedin">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <div class="shape"></div>
+                <img src="Miselia-removebg-preview.png" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Ikwan.jpg" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Misellia, a passionate singer and performer. 🎤💚 Music has always been a big part of my life, and I love sharing my emotions through every song I sing. I believe that music connects people and brings joy to the world. Let’s create beautiful memories together through music! ✨🎶</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me!</p>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Misellia Ikwan</h2>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://vm.tiktok.com/ZSM7GFJTy/" target="_blank"><img src="Tiktok_Transparan.webp" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/misellia_?igsh=MXI0eXJkbHp3aGFoaQ==" target="_blank"><img src="github.png" alt="GitHub" class="github"></a>
+                <a href="https://www.youtube.com/@MiselliaIkwan" target="_blank"><img src="YT_Transparan.webp" alt="Twitter" class="youtube"></a>
+            </div>
+            <p class="footer-text">&copy; 2025 Misellia Ikwan. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        (function () {
+            if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+                window.chatbase = (...args) => {
+                    if (!window.chatbase.q) {
+                        window.chatbase.q = [];
+                    }
+                    window.chatbase.q.push(args);
+                };
+        
+                window.chatbase = new Proxy(window.chatbase, {
+                    get(target, prop) {
+                        if (prop === "q") {
+                            return target.q;
+                        }
+                        return (...args) => target(prop, ...args);
+                    }
+                });
+            }
+        
+            const onLoad = function () {
+                const script = document.createElement("script");
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.id = "B9rA_nKHkNT1UaDZCso1M";
+                script.domain = "www.chatbase.co";
+                document.body.appendChild(script);
+            };
+        
+            if (document.readyState === "complete") {
+                onLoad();
+            } else {
+                window.addEventListener("load", onLoad);
+            }
+        })();
+        </script>
+</body>
+</html>
